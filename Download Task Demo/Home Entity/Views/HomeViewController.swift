@@ -34,10 +34,27 @@ class HomeViewController: UIViewController {
         acitvityIndicator.startAnimating()
     }
     
-
+    @IBAction func pauseButtonPressed(_ sender: UIButton) {
+        presenter.pauseDownload()
+    }
+    
+    @IBAction func resumeButtonPressed(_ sender: UIButton) {
+        presenter.resumeDownload()
+    }
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        presenter.cancelDownload()
+    }
 }
 
 extension HomeViewController : HomePresenterDelegate{
+    func stopDownloadAnimations() {
+        progressBar.progress = 0
+        acitvityIndicator.stopAnimating()
+        acitvityIndicator.isHidden = true
+        downloadButton.isEnabled = true
+    }
+    
     func updateProgressBar(withProgress: Float) {
         DispatchQueue.main.async { [self] in
             progressBar.progress = withProgress

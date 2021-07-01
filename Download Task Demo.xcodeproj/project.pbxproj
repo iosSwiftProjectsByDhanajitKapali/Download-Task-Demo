@@ -14,6 +14,16 @@
 		013F94AF268B192B00B6CE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013F94AE268B192B00B6CE05 /* Assets.xcassets */; };
 		013F94B2268B192B00B6CE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013F94B0268B192B00B6CE05 /* LaunchScreen.storyboard */; };
 		013F94BB268B1A8700B6CE05 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94BA268B1A8700B6CE05 /* HomePresenter.swift */; };
+		013F94CB268C61FD00B6CE05 /* ITunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94CA268C61FD00B6CE05 /* ITunesViewController.swift */; };
+		013F94CE268C621400B6CE05 /* ITunesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94CD268C621400B6CE05 /* ITunesPresenter.swift */; };
+		013F94D7268C62A000B6CE05 /* ITunesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94D5268C62A000B6CE05 /* ITunesTableViewCell.swift */; };
+		013F94D8268C62A000B6CE05 /* ITunesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013F94D6268C62A000B6CE05 /* ITunesTableViewCell.xib */; };
+		013F94DD268C783700B6CE05 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94DC268C783700B6CE05 /* NetworkManager.swift */; };
+		013F94E1268C787D00B6CE05 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94E0268C787D00B6CE05 /* Constants.swift */; };
+		013F94E5268C7CBD00B6CE05 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94E4268C7CBD00B6CE05 /* Tracks.swift */; };
+		013F94E8268CA31800B6CE05 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94E7268CA31800B6CE05 /* QueryService.swift */; };
+		013F94EB268E146400B6CE05 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94EA268E146300B6CE05 /* Download.swift */; };
+		013F94EE268E194E00B6CE05 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F94ED268E194E00B6CE05 /* DownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		013F94B1268B192B00B6CE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		013F94B3268B192B00B6CE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		013F94BA268B1A8700B6CE05 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		013F94CA268C61FD00B6CE05 /* ITunesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesViewController.swift; sourceTree = "<group>"; };
+		013F94CD268C621400B6CE05 /* ITunesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesPresenter.swift; sourceTree = "<group>"; };
+		013F94D5268C62A000B6CE05 /* ITunesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesTableViewCell.swift; sourceTree = "<group>"; };
+		013F94D6268C62A000B6CE05 /* ITunesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITunesTableViewCell.xib; sourceTree = "<group>"; };
+		013F94DC268C783700B6CE05 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		013F94E0268C787D00B6CE05 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		013F94E4268C7CBD00B6CE05 /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		013F94E7268CA31800B6CE05 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		013F94EA268E146300B6CE05 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		013F94ED268E194E00B6CE05 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +78,13 @@
 		013F94A4268B192700B6CE05 /* Download Task Demo */ = {
 			isa = PBXGroup;
 			children = (
+				013F94DF268C786B00B6CE05 /* Constants */,
+				013F94DB268C781600B6CE05 /* Networking */,
 				013F94A5268B192700B6CE05 /* AppDelegate.swift */,
 				013F94A7268B192700B6CE05 /* SceneDelegate.swift */,
-				013F94C2268B39B800B6CE05 /* Views */,
-				013F94C4268B39CC00B6CE05 /* Presenter */,
-				013F94AE268B192B00B6CE05 /* Assets.xcassets */,
-				013F94B0268B192B00B6CE05 /* LaunchScreen.storyboard */,
+				013F94D2268C623300B6CE05 /* Home Entity */,
+				013F94D0268C621A00B6CE05 /* ITunes Entity */,
+				013F94D3268C625100B6CE05 /* Resources */,
 				013F94B3268B192B00B6CE05 /* Info.plist */,
 			);
 			path = "Download Task Demo";
@@ -72,7 +93,6 @@
 		013F94C2268B39B800B6CE05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				013F94AB268B192700B6CE05 /* Main.storyboard */,
 				013F94A9268B192700B6CE05 /* HomeViewController.swift */,
 			);
 			path = Views;
@@ -84,6 +104,72 @@
 				013F94BA268B1A8700B6CE05 /* HomePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		013F94D0268C621A00B6CE05 /* ITunes Entity */ = {
+			isa = PBXGroup;
+			children = (
+				013F94E3268C7CAF00B6CE05 /* Models */,
+				013F94D4268C627400B6CE05 /* ITunes Cell */,
+				013F94CA268C61FD00B6CE05 /* ITunesViewController.swift */,
+				013F94CD268C621400B6CE05 /* ITunesPresenter.swift */,
+			);
+			path = "ITunes Entity";
+			sourceTree = "<group>";
+		};
+		013F94D2268C623300B6CE05 /* Home Entity */ = {
+			isa = PBXGroup;
+			children = (
+				013F94C2268B39B800B6CE05 /* Views */,
+				013F94C4268B39CC00B6CE05 /* Presenter */,
+			);
+			path = "Home Entity";
+			sourceTree = "<group>";
+		};
+		013F94D3268C625100B6CE05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				013F94AB268B192700B6CE05 /* Main.storyboard */,
+				013F94AE268B192B00B6CE05 /* Assets.xcassets */,
+				013F94B0268B192B00B6CE05 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		013F94D4268C627400B6CE05 /* ITunes Cell */ = {
+			isa = PBXGroup;
+			children = (
+				013F94D5268C62A000B6CE05 /* ITunesTableViewCell.swift */,
+				013F94D6268C62A000B6CE05 /* ITunesTableViewCell.xib */,
+			);
+			path = "ITunes Cell";
+			sourceTree = "<group>";
+		};
+		013F94DB268C781600B6CE05 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				013F94DC268C783700B6CE05 /* NetworkManager.swift */,
+				013F94E7268CA31800B6CE05 /* QueryService.swift */,
+				013F94ED268E194E00B6CE05 /* DownloadService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		013F94DF268C786B00B6CE05 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				013F94E0268C787D00B6CE05 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		013F94E3268C7CAF00B6CE05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				013F94E4268C7CBD00B6CE05 /* Tracks.swift */,
+				013F94EA268E146300B6CE05 /* Download.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +232,7 @@
 				013F94B2268B192B00B6CE05 /* LaunchScreen.storyboard in Resources */,
 				013F94AF268B192B00B6CE05 /* Assets.xcassets in Resources */,
 				013F94AD268B192700B6CE05 /* Main.storyboard in Resources */,
+				013F94D8268C62A000B6CE05 /* ITunesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,10 +243,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013F94CE268C621400B6CE05 /* ITunesPresenter.swift in Sources */,
+				013F94E5268C7CBD00B6CE05 /* Tracks.swift in Sources */,
+				013F94CB268C61FD00B6CE05 /* ITunesViewController.swift in Sources */,
 				013F94AA268B192700B6CE05 /* HomeViewController.swift in Sources */,
 				013F94A6268B192700B6CE05 /* AppDelegate.swift in Sources */,
+				013F94DD268C783700B6CE05 /* NetworkManager.swift in Sources */,
 				013F94A8268B192700B6CE05 /* SceneDelegate.swift in Sources */,
+				013F94D7268C62A000B6CE05 /* ITunesTableViewCell.swift in Sources */,
+				013F94E8268CA31800B6CE05 /* QueryService.swift in Sources */,
+				013F94EE268E194E00B6CE05 /* DownloadService.swift in Sources */,
+				013F94EB268E146400B6CE05 /* Download.swift in Sources */,
 				013F94BB268B1A8700B6CE05 /* HomePresenter.swift in Sources */,
+				013F94E1268C787D00B6CE05 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
