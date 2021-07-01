@@ -11,7 +11,7 @@ struct Track {
   let artist: String
   let index: Int
   let name: String
-  let previewURL: String
+  let previewURL: URL
     
   var isDownloaded = false
   var localURL : URL?

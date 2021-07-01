@@ -152,7 +152,7 @@ extension ITunesViewController : ITunesTableViewCellDelegate{
         for i in 0...songsDetails.count-1{
             let songDetail = songsDetails[i]
             if songDetail.index == forSongID{
-                songPreviewLink = URL(string:songDetail.previewURL)!
+                songPreviewLink = songDetail.previewURL
                 break
             }
         }

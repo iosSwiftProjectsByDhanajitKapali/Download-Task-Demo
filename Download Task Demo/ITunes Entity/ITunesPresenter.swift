@@ -88,8 +88,8 @@ extension ITunesPresenter {
             let artist = songDetail["artistName"] as! String
             let index = songDetail["trackId"] as! Int
             let name = songDetail["trackName"] as! String
-            let previewURL = songDetail["previewUrl"] as! String
-            let temp = Track(artist: artist, index: index, name: name, previewURL: previewURL)
+            let previewURL = URL(string: songDetail["previewUrl"] as! String)
+            let temp = Track(artist: artist, index: index, name: name, previewURL: previewURL!)
             
             tracks.append(temp)
         }
